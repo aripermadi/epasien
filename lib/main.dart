@@ -4,8 +4,10 @@ import 'package:flutter_kepegawaian/routes/app_page.dart';
 import 'package:flutter_kepegawaian/screens/splash/splash_screen.dart';
 import 'package:flutter_kepegawaian/theme.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
-void main() {
+void main() async {
+  await GetStorage.init();
   runApp(MyApp());
 }
 

@@ -3,8 +3,10 @@ import 'package:flutter_kepegawaian/screens/fasilitas/models/radiologi.dart';
 import 'package:flutter_kepegawaian/screens/home/controller/connect.dart';
 import 'package:flutter_kepegawaian/screens/home/models/pengumuman.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 class HomeController extends GetxController {
+  final box = GetStorage();
   TextEditingController rkm;
   TextEditingController ktp;
   var hasil = ''.obs;
@@ -34,6 +36,7 @@ class HomeController extends GetxController {
       var res = data.state;
       // print(res.state);
       print(res);
+      box.write('rkm', data.noRkmMedis);
       hasil.value = res;
       Get.back();
     } catch (e) {
