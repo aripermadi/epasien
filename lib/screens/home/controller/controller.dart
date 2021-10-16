@@ -17,7 +17,7 @@ class HomeController extends GetxController {
   void onInit() async {
     rkm = TextEditingController();
     ktp = TextEditingController();
-    await pengumuman();
+    //await pengumuman();
     super.onInit();
   }
 
@@ -34,7 +34,7 @@ class HomeController extends GetxController {
       hasil.value = '';
       var data = await UserProvider().login('signin', rkm.text, ktp.text);
       var res = data.state;
-      // print(res.state);
+
       print(res);
       box.write('rkm', data.noRkmMedis);
       hasil.value = res;

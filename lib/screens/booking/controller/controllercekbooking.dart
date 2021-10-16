@@ -6,13 +6,12 @@ import 'package:flutter_kepegawaian/screens/sign_up/controller/model.dart';
 import 'package:get/get.dart';
 
 class ControllerCekBooking extends GetxController {
-  var hasilCekBooking = ''.obs;
-  TextEditingController no_booking;
+  TextEditingController nobooking;
   TextEditingController nohp;
-  // var listOperasi = List<Operas>().obs;
 
+  var hasilCekBooking = ''.obs;
   void onInit() async {
-    no_booking = TextEditingController();
+    nobooking = TextEditingController();
     nohp = TextEditingController();
     super.onInit();
   }
@@ -30,12 +29,12 @@ class ControllerCekBooking extends GetxController {
       hasilCekBooking.value = '';
       var data = await GetCekBooking().cekbooking(
         'cekbooking',
-        no_booking.text,
+        nobooking.text,
         nohp.text,
       );
       var res = data.state;
       hasilCekBooking.value = res;
-      print(res);
+      print(nobooking);
       Get.back();
     } catch (e) {
       print(e);
