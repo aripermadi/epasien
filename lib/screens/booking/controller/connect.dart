@@ -11,7 +11,7 @@ class GetCekBooking {
         body: {
           'action': action,
           'no_booking': no_booking,
-          'no_hp': no_hp,
+          'no_telp': no_hp,
         },
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         encoding: Encoding.getByName("utf-8"));

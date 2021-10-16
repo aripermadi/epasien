@@ -4,8 +4,10 @@ import 'package:flutter_kepegawaian/screens/booking/controller/models.dart';
 import 'package:flutter_kepegawaian/screens/sign_up/controller/connect.dart';
 import 'package:flutter_kepegawaian/screens/sign_up/controller/model.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 class ControllerCekBooking extends GetxController {
+  //final box = GetStorage();
   TextEditingController nobooking;
   TextEditingController nohp;
 
@@ -13,6 +15,7 @@ class ControllerCekBooking extends GetxController {
   void onInit() async {
     nobooking = TextEditingController();
     nohp = TextEditingController();
+
     super.onInit();
   }
 
@@ -33,8 +36,9 @@ class ControllerCekBooking extends GetxController {
         nohp.text,
       );
       var res = data.state;
+      //box.write('rkm', data.state);
       hasilCekBooking.value = res;
-      print(nobooking);
+      print(res);
       Get.back();
     } catch (e) {
       print(e);
