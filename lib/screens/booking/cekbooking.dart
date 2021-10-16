@@ -78,7 +78,7 @@ class _CekBookingState extends State<CekBooking> {
               await controllerbooking.cekbookingperiksa();
               if (controllerbooking.hasilCekBooking.value ==
                   'booking_diterima') {
-                Get.toNamed('/loginsukses');
+                Get.toNamed('/bookingditerima');
               } else if (controllerbooking.hasilCekBooking.value ==
                   'booking_Kedaluarsa') {
                 showAlertDialog(context);

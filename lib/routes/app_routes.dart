@@ -9,6 +9,7 @@ abstract class Routes {
   static const CATEGORY = '/category';
   static const LayananUnggulan = '/layananunggulan';
   static const Booking = '/booking';
+  static const bookingditerima = '/bookingditerima';
   static const LoginSuccessScreen = '/loginsukses';
   static const Pengaduan = '/pengaduan';
   static const RiwayatBooking = '/riwayatbooking';

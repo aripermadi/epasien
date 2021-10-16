@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
 class ControllerCekBooking extends GetxController {
-  //final box = GetStorage();
+  final box = GetStorage();
   TextEditingController nobooking;
   TextEditingController nohp;
 
@@ -36,9 +36,9 @@ class ControllerCekBooking extends GetxController {
         nohp.text,
       );
       var res = data.state;
-      //box.write('rkm', data.state);
+      box.write('no_booking', nobooking.text);
       hasilCekBooking.value = res;
-      print(res);
+      print(nobooking);
       Get.back();
     } catch (e) {
       print(e);
