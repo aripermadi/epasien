@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_kepegawaian/components/custom_surfix_icon.dart';
 import 'package:flutter_kepegawaian/components/default_button.dart';
 import 'package:flutter_kepegawaian/components/form_error.dart';
+import 'package:flutter_kepegawaian/screens/booking/controller/controllercekbooking.dart';
+import 'package:flutter_kepegawaian/screens/booking/controller/models.dart';
 import 'package:flutter_kepegawaian/size_config.dart';
 import 'package:get/get.dart';
 
@@ -13,6 +15,7 @@ class CekBooking extends StatefulWidget {
 }
 
 class _CekBookingState extends State<CekBooking> {
+  final controllerbooking = Get.put(ControllerCekBooking());
   final dateFormat = DateFormat("dd-M-yyyy");
   final _formKey = GlobalKey<FormState>();
 
@@ -35,6 +38,24 @@ class _CekBookingState extends State<CekBooking> {
       });
   }
 
+  showAlertDialog(BuildContext context) {
+    // set up the AlertDialog
+    AlertDialog alert = AlertDialog(
+      title: Center(
+        child: Text("Peringatan"),
+      ),
+      content: Text("Booking belum tervalidasi"),
+    );
+
+    // show the dialog
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -49,15 +70,22 @@ class _CekBookingState extends State<CekBooking> {
           SizedBox(height: getProportionateScreenHeight(30)),
           buildNoHPFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
-
-          //SizedBox(height: getProportionateScreenHeight(30)),
-          //buildConformPassFormField(),
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(40)),
           DefaultButton(
             text: "Lanjut",
-            press: () {
-              Get.offNamed('/home');
+            press: () async {
+              await controllerbooking.cekbookingperiksa();
+              if (controllerbooking.hasilCekBooking.value ==
+                  'booking_diterima') {
+                Get.toNamed('/loginsukses');
+              } else if (controllerbooking.hasilCekBooking.value ==
+                  'booking_Kedaluarsa') {
+                showAlertDialog(context);
+              } else
+                return Center(
+                  child: Text('ambil data'),
+                );
             },
           ),
         ],
@@ -67,6 +95,7 @@ class _CekBookingState extends State<CekBooking> {
 
   TextFormField buildNoBookingFormField() {
     return TextFormField(
+      controller: controllerbooking.nobooking,
       onSaved: (newValue) => nobooking = newValue,
       onChanged: (value) {
         nobooking = value;
@@ -84,6 +113,7 @@ class _CekBookingState extends State<CekBooking> {
 
   TextFormField buildNoHPFormField() {
     return TextFormField(
+      controller: controllerbooking.nohp,
       onSaved: (newValue) => nohp = newValue,
       onChanged: (value) {
         nohp = value;

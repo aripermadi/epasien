@@ -70,7 +70,7 @@ class _SignFormState extends State<SignForm> {
             press: () async {
               await loginController.login();
               if (loginController.hasil.value == 'valid') {
-                Get.toNamed('/loginsukses');
+                Get.toNamed('/home');
               } else if (loginController.hasil.value == 'invalid') {
                 showAlertDialog(context);
               }

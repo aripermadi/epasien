@@ -15,7 +15,7 @@ class SplashContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Spacer(),
+        //Spacer(),
         Text(
           "E-PASIEN",
           style: TextStyle(

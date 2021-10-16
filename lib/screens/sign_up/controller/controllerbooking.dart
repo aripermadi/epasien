@@ -53,9 +53,9 @@ class BookingController extends GetxController {
           DateFormat('yyyy-MM-dd').format(tgl.value),
           poliSelected.value);
       var res = data.state;
-      print(res);
+      print(data);
       // print(res.state);
-      //print(res);
+      print(res);
       berhasil.value = res;
       Get.back();
     } catch (e) {

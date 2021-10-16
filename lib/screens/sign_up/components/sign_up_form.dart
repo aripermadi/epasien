@@ -111,7 +111,7 @@ class _SignUpFormState extends State<SignUpForm> {
               //print(bookingController);
               await bookingController.booking();
               if (bookingController.berhasil.value == 'sukses') {
-                Get.toNamed('/booking');
+                Get.toNamed('/loginsukses');
               } else if (bookingController.berhasil.value == '') {
                 showAlertDialog(context);
               }
