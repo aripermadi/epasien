@@ -31,7 +31,7 @@ class DokterController extends GetxController {
 
       listdokter.value = data;
 
-      print(jsonEncode(data));
+      //print(jsonEncode(data));
       //kamar.value = res;
       Get.back();
     } catch (e) {

@@ -17,7 +17,7 @@ class HomeController extends GetxController {
   void onInit() async {
     rkm = TextEditingController();
     ktp = TextEditingController();
-    //await pengumuman();
+    await pengumuman();
     super.onInit();
   }
 
@@ -57,7 +57,7 @@ class HomeController extends GetxController {
       );
       var data = await GetPengumuman().pengumuman();
       listPengumuman.value = data;
-
+      print(data);
       Get.back();
     } catch (e) {
       print(e);

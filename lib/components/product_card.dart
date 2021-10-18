@@ -24,11 +24,7 @@ class ProductCard extends StatelessWidget {
       child: SizedBox(
         width: getProportionateScreenWidth(width),
         child: GestureDetector(
-          onTap: () => Navigator.pushNamed(
-            context,
-            DetailsScreen.routeName,
-            arguments: ProductDetailsArguments(product: product),
-          ),
+          onTap: () {},
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -61,27 +57,6 @@ class ProductCard extends StatelessWidget {
                       fontSize: getProportionateScreenWidth(18),
                       fontWeight: FontWeight.w600,
                       color: kPrimaryColor,
-                    ),
-                  ),
-                  InkWell(
-                    borderRadius: BorderRadius.circular(50),
-                    onTap: () {},
-                    child: Container(
-                      padding: EdgeInsets.all(getProportionateScreenWidth(8)),
-                      height: getProportionateScreenWidth(28),
-                      width: getProportionateScreenWidth(28),
-                      decoration: BoxDecoration(
-                        color: product.isFavourite
-                            ? kPrimaryColor.withOpacity(0.15)
-                            : kSecondaryColor.withOpacity(0.1),
-                        shape: BoxShape.circle,
-                      ),
-                      child: SvgPicture.asset(
-                        "assets/icons/Heart Icon_2.svg",
-                        color: product.isFavourite
-                            ? Color(0xFFFF4848)
-                            : Color(0xFFDBDEE4),
-                      ),
                     ),
                   ),
                 ],
