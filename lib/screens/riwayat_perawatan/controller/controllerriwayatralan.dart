@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_kepegawaian/screens/booking/controller/connect.dart';
 import 'package:flutter_kepegawaian/screens/booking/controller/models.dart';
@@ -29,12 +31,14 @@ class ControllerRiwayat extends GetxController {
             barrierDismissible: true),
       );
       final no_rkm_medis = box.read('rkm');
+
       var data = await GetRiwayatRalan().riwayatralan(
         'riwayat',
         no_rkm_medis,
       );
+      listriwayat.value = data;
       var res = data;
-      print(no_rkm_medis);
+      print(jsonEncode(data.toString()));
       Get.back();
     } catch (e) {
       print(e);
