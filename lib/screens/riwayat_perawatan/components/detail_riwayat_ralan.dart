@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_kepegawaian/screens/riwayat_perawatan/controller/controllerriwayatralan.dart';
 import 'package:flutter_kepegawaian/size_config.dart';
+import 'package:get/get.dart';
 
 class DetailRiwayatRalan extends StatefulWidget {
   DetailRiwayatRalan({Key key}) : super(key: key);
@@ -9,6 +11,7 @@ class DetailRiwayatRalan extends StatefulWidget {
 }
 
 class _DetailRiwayatRalanState extends State<DetailRiwayatRalan> {
+  final controllerriwayat = Get.put(ControllerRiwayat());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +45,7 @@ class _DetailRiwayatRalanState extends State<DetailRiwayatRalan> {
                           children: [
                             Text.rich(
                               TextSpan(
-                                  text: "No Rawat :",
+                                  text: "No Rawat :  ",
                                   style: TextStyle(fontSize: 20)),
                             ),
                           ],

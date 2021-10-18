@@ -28,7 +28,6 @@ class KamarController extends GetxController {
       listKamar.value = data;
 
       print(jsonEncode(data));
-      //kamar.value = res;
       Get.back();
     } catch (e) {
       print(e);
