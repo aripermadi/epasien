@@ -2,7 +2,7 @@ import 'package:flutter_kepegawaian/screens/Ketersediaan_TT/screen_tt.dart';
 import 'package:flutter_kepegawaian/screens/booking/booking.dart';
 import 'package:flutter_kepegawaian/screens/booking/booking_success/booking_success_screen.dart';
 import 'package:flutter_kepegawaian/screens/fasilitas/layanan_unggulan.dart';
-import 'package:flutter_kepegawaian/screens/home/components/categories.dart';
+import 'package:flutter_kepegawaian/screens/home/components/informasi.dart';
 import 'package:flutter_kepegawaian/screens/home/home_screen.dart';
 import 'package:flutter_kepegawaian/screens/jadwal_dokter/jadwaldokter.dart';
 import 'package:flutter_kepegawaian/screens/login_success/login_success_screen.dart';

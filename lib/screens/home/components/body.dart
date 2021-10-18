@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_kepegawaian/screens/jadwal_dokter/components/list_dokter.dart';
 
 import '../../../size_config.dart';
-import 'categories.dart';
-import 'discount_banner.dart';
+import 'informasi.dart';
+import 'pendaftaran.dart';
 import 'home_header.dart';
-import 'popular_product.dart';
+import 'pengumuman.dart';
 
 class Body extends StatelessWidget {
   @override
