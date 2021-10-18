@@ -8,6 +8,7 @@ import 'package:flutter_kepegawaian/screens/booking/controller/controllercekbook
 import 'package:flutter_kepegawaian/screens/booking/controller/models.dart';
 import 'package:flutter_kepegawaian/size_config.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
 class CekBooking extends StatefulWidget {
   @override
@@ -18,7 +19,6 @@ class _CekBookingState extends State<CekBooking> {
   final controllerbooking = Get.put(ControllerCekBooking());
   final dateFormat = DateFormat("dd-M-yyyy");
   final _formKey = GlobalKey<FormState>();
-
   String nobooking;
   String nohp;
 
