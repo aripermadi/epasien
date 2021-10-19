@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/jadwal_dokter/components/list_dokter.dart';
+import 'package:EPASIEN/screens/jadwal_dokter/components/list_dokter.dart';
 
 import '../../../size_config.dart';
 import 'informasi.dart';
@@ -20,7 +20,7 @@ class Body extends StatelessWidget {
             Categories(),
             //SpecialOffers(),
             SizedBox(height: getProportionateScreenWidth(30)),
-            PopularProducts(),
+            Pengumuman(),
             SizedBox(height: getProportionateScreenWidth(30)),
             Padding(
               padding: const EdgeInsets.all(10.0),

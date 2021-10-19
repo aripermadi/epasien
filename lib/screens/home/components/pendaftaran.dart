@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/constants.dart';
+import 'package:EPASIEN/constants.dart';
 import 'package:get/get.dart';
 
 import '../../../size_config.dart';

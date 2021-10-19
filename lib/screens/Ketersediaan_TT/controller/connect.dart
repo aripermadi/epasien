@@ -1,5 +1,5 @@
-import 'package:flutter_kepegawaian/config.dart';
-import 'package:flutter_kepegawaian/screens/Ketersediaan_TT/model/models.dart';
+import 'package:EPASIEN/config.dart';
+import 'package:EPASIEN/screens/Ketersediaan_TT/model/models.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 

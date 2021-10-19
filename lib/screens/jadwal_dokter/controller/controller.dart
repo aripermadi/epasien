@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'package:intl/intl.dart';
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/jadwal_dokter/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/jadwal_dokter/controller/model.dart';
+import 'package:EPASIEN/screens/jadwal_dokter/controller/connect.dart';
+import 'package:EPASIEN/screens/jadwal_dokter/controller/model.dart';
 import 'package:get/get.dart';
 
 class DokterController extends GetxController {

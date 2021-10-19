@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/jadwal_dokter/jadwaldokter.dart';
+import 'package:EPASIEN/screens/jadwal_dokter/jadwaldokter.dart';
 import 'package:get/get.dart';
 
 import '../../../size_config.dart';

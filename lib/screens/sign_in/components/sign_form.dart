@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/custom_surfix_icon.dart';
-import 'package:flutter_kepegawaian/components/form_error.dart';
-import 'package:flutter_kepegawaian/screens/home/controller/controller.dart';
+import 'package:EPASIEN/components/custom_surfix_icon.dart';
+import 'package:EPASIEN/components/form_error.dart';
+import 'package:EPASIEN/screens/home/controller/controller.dart';
 import 'package:get/get.dart';
 
 import '../../../components/default_button.dart';

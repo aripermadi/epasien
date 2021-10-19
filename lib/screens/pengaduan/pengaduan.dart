@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/coustom_bottom_nav_bar.dart';
-import 'package:flutter_kepegawaian/enums.dart';
+import 'package:EPASIEN/components/coustom_bottom_nav_bar.dart';
+import 'package:EPASIEN/enums.dart';
 import 'components/body.dart';
 
 class Pengaduan extends StatelessWidget {

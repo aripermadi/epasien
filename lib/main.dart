@@ -1,8 +1,9 @@
+import 'package:EPASIEN/routes/app_page.dart';
+import 'package:EPASIEN/screens/splash/splash_screen.dart';
+import 'package:EPASIEN/theme.dart';
 import 'package:flutter/material.dart';
-//import 'package:flutter_kepegawaian/routes.dart';
-import 'package:flutter_kepegawaian/routes/app_page.dart';
-import 'package:flutter_kepegawaian/screens/splash/splash_screen.dart';
-import 'package:flutter_kepegawaian/theme.dart';
+//import 'package:EPASIEN/routes.dart';
+
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 

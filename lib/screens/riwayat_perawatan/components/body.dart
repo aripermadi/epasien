@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/riwayat_perawatan/components/detail_riwayat_ralan.dart';
-import 'package:flutter_kepegawaian/screens/riwayat_perawatan/components/detail_riwayat_ranap.dart';
+import 'package:EPASIEN/screens/riwayat_perawatan/components/detail_riwayat_ralan.dart';
+import 'package:EPASIEN/screens/riwayat_perawatan/components/detail_riwayat_ranap.dart';
 
 class Body extends StatelessWidget {
   TabController tabController;

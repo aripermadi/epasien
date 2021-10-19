@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/pengaduan/components/models.dart';
+import 'package:EPASIEN/screens/pengaduan/components/models.dart';
 
 class ChatPesan extends StatelessWidget {
   const ChatPesan({

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/default_button.dart';
-import 'package:flutter_kepegawaian/screens/booking/booking_success/controller/controllerbookingsukses.dart';
-import 'package:flutter_kepegawaian/screens/booking/controller/controllercekbooking.dart';
-import 'package:flutter_kepegawaian/screens/booking/controller/models.dart';
-import 'package:flutter_kepegawaian/size_config.dart';
+import 'package:EPASIEN/components/default_button.dart';
+import 'package:EPASIEN/screens/booking/booking_success/controller/controllerbookingsukses.dart';
+import 'package:EPASIEN/screens/booking/controller/controllercekbooking.dart';
+import 'package:EPASIEN/screens/booking/controller/models.dart';
+import 'package:EPASIEN/size_config.dart';
 import 'package:get/get.dart';
 
 class Body extends StatelessWidget {

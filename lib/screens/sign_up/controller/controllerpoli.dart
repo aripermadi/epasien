@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/sign_up/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/sign_up/controller/model.dart';
+import 'package:EPASIEN/screens/sign_up/controller/connect.dart';
+import 'package:EPASIEN/screens/sign_up/controller/model.dart';
 import 'package:get/get.dart';
 
 class ControllerPoli extends GetxController {

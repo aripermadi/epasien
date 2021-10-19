@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/controller/controllerok.dart';
+import 'package:EPASIEN/screens/fasilitas/controller/controllerok.dart';
 import 'package:get/get.dart';
 
 class TarifOk extends StatefulWidget {

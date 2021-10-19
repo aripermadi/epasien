@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/pengaduan/components/chat.dart';
-import 'package:flutter_kepegawaian/screens/pengaduan/components/chatmessage.dart';
+import 'package:EPASIEN/screens/pengaduan/components/chat.dart';
+import 'package:EPASIEN/screens/pengaduan/components/chatmessage.dart';
 
 class Body extends StatelessWidget {
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/Ketersediaan_TT/controller/controller.dart';
+import 'package:EPASIEN/screens/Ketersediaan_TT/controller/controller.dart';
 import 'package:get/get.dart';
 
 class ListKamar extends StatefulWidget {

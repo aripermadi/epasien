@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/booking/controller/connect.dart';
+import 'package:EPASIEN/screens/booking/controller/connect.dart';
 import 'package:get/get.dart';
 
 class ControllerBookingSukses extends GetxController {

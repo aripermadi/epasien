@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/controller/controllerrad.dart';
+import 'package:EPASIEN/screens/fasilitas/controller/controllerrad.dart';
 import 'package:get/get.dart';
 
 class TarifRad extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/models/operasi.dart';
+import 'package:EPASIEN/screens/fasilitas/controller/connect.dart';
+import 'package:EPASIEN/screens/fasilitas/models/operasi.dart';
 import 'package:get/get.dart';
 
 class OkController extends GetxController {

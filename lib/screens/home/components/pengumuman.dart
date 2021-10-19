@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/product_card.dart';
-import 'package:flutter_kepegawaian/models/Product.dart';
+import 'package:EPASIEN/components/product_card.dart';
+import 'package:EPASIEN/models/Product.dart';
+import 'package:EPASIEN/screens/home/controller/controller.dart';
+import 'package:EPASIEN/screens/home/controller/controllerpengumuman.dart';
+import 'package:get/get.dart';
 
 import '../../../size_config.dart';
 import 'section_title.dart';
 
-class PopularProducts extends StatelessWidget {
+class Pengumuman extends StatelessWidget {
+  final controllerpengumuman = Get.put(ControllerPengumuman());
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,24 +20,6 @@ class PopularProducts extends StatelessWidget {
           child: SectionTitle(title: "Pengumuman", press: () {}),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              ...List.generate(
-                demoProducts.length,
-                (index) {
-                  if (demoProducts[index].isPopular)
-                    return ProductCard(product: demoProducts[index]);
-
-                  return SizedBox
-                      .shrink(); // here by default width and height is 0
-                },
-              ),
-              SizedBox(width: getProportionateScreenWidth(20)),
-            ],
-          ),
-        )
       ],
     );
   }

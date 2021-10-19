@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/home/components/special_offers.dart';
-import 'package:flutter_kepegawaian/screens/jadwal_dokter/components/list_dokter.dart';
+import 'package:EPASIEN/screens/home/components/special_offers.dart';
+import 'package:EPASIEN/screens/jadwal_dokter/components/list_dokter.dart';
 import 'package:get/get.dart';
 import 'controller/controller.dart';
 

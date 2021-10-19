@@ -1,11 +1,11 @@
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/custom_surfix_icon.dart';
-import 'package:flutter_kepegawaian/components/default_button.dart';
-import 'package:flutter_kepegawaian/components/form_error.dart';
-import 'package:flutter_kepegawaian/screens/sign_up/controller/controllerbooking.dart';
-import 'package:flutter_kepegawaian/screens/sign_up/controller/controllerpoli.dart';
+import 'package:EPASIEN/components/custom_surfix_icon.dart';
+import 'package:EPASIEN/components/default_button.dart';
+import 'package:EPASIEN/components/form_error.dart';
+import 'package:EPASIEN/screens/sign_up/controller/controllerbooking.dart';
+import 'package:EPASIEN/screens/sign_up/controller/controllerpoli.dart';
 import 'package:get/get.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';

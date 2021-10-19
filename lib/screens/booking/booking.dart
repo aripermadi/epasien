@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/booking/cekbooking.dart';
+import 'package:EPASIEN/screens/booking/cekbooking.dart';
 
 class Booking extends StatelessWidget {
   static String routeName = "/booking";

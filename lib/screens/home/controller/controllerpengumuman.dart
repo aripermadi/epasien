@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:EPASIEN/screens/fasilitas/models/radiologi.dart';
 import 'package:EPASIEN/screens/home/controller/connect.dart';
@@ -5,23 +7,16 @@ import 'package:EPASIEN/screens/home/models/pengumuman.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
-class HomeController extends GetxController {
+class ControllerPengumuman extends GetxController {
   final box = GetStorage();
-  TextEditingController rkm;
-  TextEditingController ktp;
-  var hasil = ''.obs;
-
-  var listRad = List<Radiologi>().obs;
-  var listPengumuman = List<Pengumuman>().obs;
+  var listPengumuman = <Pengumuman>[].obs;
 
   void onInit() async {
-    rkm = TextEditingController();
-    ktp = TextEditingController();
-
+    await pengumuman();
     super.onInit();
   }
 
-  Future login() async {
+  Future pengumuman() async {
     try {
       Future.delayed(
         Duration.zero,
@@ -31,13 +26,9 @@ class HomeController extends GetxController {
             ),
             barrierDismissible: true),
       );
-      hasil.value = '';
-      var data = await UserProvider().login('signin', rkm.text, ktp.text);
-      var res = data.state;
-
-      print(res);
-      box.write('rkm', data.noRkmMedis);
-      hasil.value = res;
+      var data = await GetPengumuman().pengumuman();
+      listPengumuman.value = data;
+      print(jsonEncode(data));
       Get.back();
     } catch (e) {
       print(e);

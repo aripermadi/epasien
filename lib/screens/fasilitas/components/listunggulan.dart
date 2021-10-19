@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/controller/controllerlab.dart';
+import 'package:EPASIEN/screens/fasilitas/controller/controllerlab.dart';
 import 'package:get/get.dart';
 
 class ListUnggulan extends StatefulWidget {

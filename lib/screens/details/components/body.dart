@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/default_button.dart';
-import 'package:flutter_kepegawaian/models/Product.dart';
-import 'package:flutter_kepegawaian/size_config.dart';
+import 'package:EPASIEN/components/default_button.dart';
+import 'package:EPASIEN/models/Product.dart';
+import 'package:EPASIEN/size_config.dart';
 
 import 'color_dots.dart';
 import 'product_description.dart';

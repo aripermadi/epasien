@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/models/laborat.dart';
-import 'package:flutter_kepegawaian/screens/home/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/home/models/pengumuman.dart';
+import 'package:EPASIEN/screens/fasilitas/controller/connect.dart';
+import 'package:EPASIEN/screens/fasilitas/models/laborat.dart';
+import 'package:EPASIEN/screens/home/controller/connect.dart';
+import 'package:EPASIEN/screens/home/models/pengumuman.dart';
 import 'package:get/get.dart';
 
 class LayananController extends GetxController {

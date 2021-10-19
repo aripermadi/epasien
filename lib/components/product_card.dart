@@ -1,28 +1,21 @@
+import 'package:EPASIEN/screens/home/controller/controller.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/models/Product.dart';
-import 'package:flutter_kepegawaian/screens/details/details_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:http/http.dart';
 
 import '../constants.dart';
 import '../size_config.dart';
 
 class ProductCard extends StatelessWidget {
-  const ProductCard({
-    Key key,
-    this.width = 140,
-    this.aspectRetio = 1.02,
-    @required this.product,
-  }) : super(key: key);
-
-  final double width, aspectRetio;
-  final Product product;
+  final listpengumuman = Get.put(HomeController());
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(left: getProportionateScreenWidth(20)),
       child: SizedBox(
-        width: getProportionateScreenWidth(width),
+        width: getProportionateScreenWidth(40),
         child: GestureDetector(
           onTap: () {},
           child: Column(
@@ -36,23 +29,16 @@ class ProductCard extends StatelessWidget {
                     color: kSecondaryColor.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  child: Hero(
-                    tag: product.id.toString(),
-                    child: Image.asset(product.images[0]),
-                  ),
+                  child: Card(),
                 ),
               ),
               const SizedBox(height: 10),
-              Text(
-                product.title,
-                style: TextStyle(color: Colors.black),
-                maxLines: 2,
-              ),
+              Text("text"),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "\$${product.price}",
+                    "",
                     style: TextStyle(
                       fontSize: getProportionateScreenWidth(18),
                       fontWeight: FontWeight.w600,

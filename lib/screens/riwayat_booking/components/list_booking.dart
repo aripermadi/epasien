@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/size_config.dart';
+import 'package:EPASIEN/size_config.dart';
 
 class ListBooking extends StatefulWidget {
   ListBooking({Key key}) : super(key: key);

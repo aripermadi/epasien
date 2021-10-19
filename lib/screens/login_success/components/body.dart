@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/default_button.dart';
-import 'package:flutter_kepegawaian/size_config.dart';
+import 'package:EPASIEN/components/default_button.dart';
+import 'package:EPASIEN/size_config.dart';
 import 'package:get/get.dart';
 
 class Body extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/booking/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/booking/controller/models.dart';
-import 'package:flutter_kepegawaian/screens/sign_up/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/sign_up/controller/model.dart';
+import 'package:EPASIEN/screens/booking/controller/connect.dart';
+import 'package:EPASIEN/screens/booking/controller/models.dart';
+import 'package:EPASIEN/screens/sign_up/controller/connect.dart';
+import 'package:EPASIEN/screens/sign_up/controller/model.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 

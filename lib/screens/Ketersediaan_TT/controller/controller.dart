@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/Ketersediaan_TT/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/Ketersediaan_TT/model/models.dart';
+import 'package:EPASIEN/screens/Ketersediaan_TT/controller/connect.dart';
+import 'package:EPASIEN/screens/Ketersediaan_TT/model/models.dart';
 import 'package:get/get.dart';
 import 'package:meta/meta.dart';
 

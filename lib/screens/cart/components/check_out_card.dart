@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/default_button.dart';
+import 'package:EPASIEN/components/default_button.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../constants.dart';

@@ -1,20 +1,20 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/screens/booking/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/booking/controller/models.dart';
-import 'package:flutter_kepegawaian/screens/riwayat_perawatan/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/riwayat_perawatan/models/riwayat.dart';
-import 'package:flutter_kepegawaian/screens/sign_up/controller/connect.dart';
-import 'package:flutter_kepegawaian/screens/sign_up/controller/model.dart';
+import 'package:EPASIEN/screens/booking/controller/connect.dart';
+import 'package:EPASIEN/screens/booking/controller/models.dart';
+import 'package:EPASIEN/screens/riwayat_perawatan/controller/connect.dart';
+import 'package:EPASIEN/screens/riwayat_perawatan/models/riwayat.dart';
+import 'package:EPASIEN/screens/sign_up/controller/connect.dart';
+import 'package:EPASIEN/screens/sign_up/controller/model.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:http/http.dart';
 
 class ControllerRiwayat extends GetxController {
   final box = GetStorage();
-  final listriwayat = List<Riwayat>().obs;
-
+  final listriwayat = <Riwayat>[].obs;
+  var hasilriwayatralan = ''.obs;
   void onInit() async {
     await cekriwayat();
     super.onInit();
@@ -31,14 +31,13 @@ class ControllerRiwayat extends GetxController {
             barrierDismissible: true),
       );
       final no_rkm_medis = box.read('rkm');
-
+      hasilriwayatralan.value = '';
       var data = await GetRiwayatRalan().riwayatralan(
         'riwayat',
         no_rkm_medis,
       );
       listriwayat.value = data;
-      var res = data;
-      print(jsonEncode(data.toString()));
+      print(jsonEncode(data));
       Get.back();
     } catch (e) {
       print(e);
@@ -51,11 +50,11 @@ class ControllerDetailRiwayat extends GetxController {
   final box = GetStorage();
 
   void onInit() async {
-    await cekriwayat();
+    await cekriwayatdetail();
     super.onInit();
   }
 
-  Future cekriwayat() async {
+  Future cekriwayatdetail() async {
     try {
       Future.delayed(
         Duration.zero,

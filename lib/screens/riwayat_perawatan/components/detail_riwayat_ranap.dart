@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/size_config.dart';
+import 'package:EPASIEN/size_config.dart';
 
 class DetailRiwayatRanap extends StatefulWidget {
   DetailRiwayatRanap({Key key}) : super(key: key);

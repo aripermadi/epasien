@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kepegawaian/components/rounded_icon_btn.dart';
-import 'package:flutter_kepegawaian/models/Product.dart';
+import 'package:EPASIEN/components/rounded_icon_btn.dart';
+import 'package:EPASIEN/models/Product.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';

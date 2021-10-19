@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:flutter_kepegawaian/screens/fasilitas/models/operasi.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/models/radiologi.dart';
+import 'package:EPASIEN/screens/fasilitas/models/operasi.dart';
+import 'package:EPASIEN/screens/fasilitas/models/radiologi.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_kepegawaian/config.dart';
-import 'package:flutter_kepegawaian/screens/fasilitas/models/laborat.dart';
+import 'package:EPASIEN/config.dart';
+import 'package:EPASIEN/screens/fasilitas/models/laborat.dart';
 
 class Laborat {
   Future<List<Laboratorium>> laborat() async {

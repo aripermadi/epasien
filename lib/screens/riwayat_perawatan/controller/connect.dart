@@ -1,6 +1,6 @@
-import 'package:flutter_kepegawaian/config.dart';
-import 'package:flutter_kepegawaian/screens/riwayat_perawatan/models/riwayat.dart';
-import 'package:flutter_kepegawaian/screens/riwayat_perawatan/models/riwayatdetail.dart';
+import 'package:EPASIEN/config.dart';
+import 'package:EPASIEN/screens/riwayat_perawatan/models/riwayat.dart';
+import 'package:EPASIEN/screens/riwayat_perawatan/models/riwayatdetail.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 

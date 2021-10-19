@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_kepegawaian/models/Product.dart';
+import 'package:EPASIEN/models/Product.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
