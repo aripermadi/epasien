@@ -20,6 +20,75 @@ class Pengumuman extends StatelessWidget {
           child: SectionTitle(title: "Pengumuman", press: () {}),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
+        Padding(
+          padding: const EdgeInsets.all(4.0),
+          child: Container(
+            child: Obx(() {
+              if (controllerpengumuman.listPengumuman.length != 0) {
+                return ListView.builder(
+                  shrinkWrap: true,
+                  physics: BouncingScrollPhysics(),
+                  itemCount: controllerpengumuman.listPengumuman.length,
+                  itemBuilder: (context, index) {
+                    return Card(
+                      elevation: 5,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              /*Row(
+                                    children: [
+                                      Text.rich(
+                                        TextSpan(
+                                            // text: "Nama : ",
+                                            style: TextStyle(fontSize: 20)),
+                                      ),
+                                    ],
+                                  ),*/
+                              // SizedBox(
+                              //   height: (5),
+                              // ),
+                              Row(
+                                children: [
+                                  Text.rich(
+                                    TextSpan(
+                                        text:
+                                            "${controllerpengumuman.listPengumuman.value[index].pengumuman}",
+                                        style: TextStyle(fontSize: 20)),
+                                  ),
+                                ],
+                              ),
+                              // SizedBox(
+                              //   height: (5),
+                              // ),
+                              Row(
+                                children: [
+                                  Text.rich(
+                                    TextSpan(
+                                        text:
+                                            " ${controllerpengumuman.listPengumuman.value[index].tanggal}",
+                                        style: TextStyle(fontSize: 20)),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                );
+              } else {
+                return Center(
+                  child: Text('Loading'),
+                );
+              }
+            }),
+          ),
+        )
       ],
     );
   }
